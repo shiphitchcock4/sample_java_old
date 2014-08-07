@@ -4,6 +4,7 @@ public class App {
 	public App() {
 	}
 	public String getData() {
-		return "Hope works!";
+		return "Hope this works!";
 	}
+	
 }

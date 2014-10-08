@@ -9,7 +9,7 @@ after_success:
    - mvn clean cobertura:cobertura
    - mvn test
  
-script: true
+script: mvn --version
 
 notifications:
   email: false

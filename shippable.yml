@@ -11,8 +11,10 @@ after_success:
  
 script: mvn --version
 
+
 notifications:
   email: false
+
 
 archive: true
 

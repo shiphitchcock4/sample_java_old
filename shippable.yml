@@ -9,7 +9,7 @@ after_success:
    - mvn clean cobertura:cobertura
    - mvn test
  
-#script: mvn --version
+before_script: mvn --version
 
 
 notifications:

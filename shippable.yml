@@ -15,7 +15,6 @@ before_script: mvn --version
 notifications:
   email: false
 
-
 archive: true
 
 parallelized_test: true

@@ -19,3 +19,10 @@ archive: true
 
 parallelized_test: true
 #cache: true
+notifications:
+  email:
+    recipients:
+       - vidya@shippable.com
+       - buildsampletest@gmail.com
+    on_success: always
+    on_failure: always

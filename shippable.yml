@@ -11,7 +11,7 @@ after_success:
  
 before_install:
   #- source /home/shippable/.rvm/scripts/rvm
-  - source ~/.rvm/scripts/rvm && rvm use 2.0.0
+  - source ~/.rvm/scripts/rvm && rvm use 1.9.3
   #- rvm use 2.0.0
   
 before_script: 
@@ -34,4 +34,4 @@ notifications:
        - buildsampletest@gmail.com
     on_success: always
     on_failure: always
-build_image: shippable/minv2:beta
+#build_image: shippable/minv2:beta

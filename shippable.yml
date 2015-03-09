@@ -25,7 +25,19 @@ notifications:
 
 archive: true
 
-parallelized_test: true
+
+
+after_success:
+# - git push git@heroku.com:ultimate-seed.git master
+
+after_failure:
+# -
+
+after_script:
+# - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd
+# - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
+
+
 #cache: true
 notifications:
   email:

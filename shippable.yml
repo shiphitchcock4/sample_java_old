@@ -21,23 +21,7 @@ env:
   - secure: CcP0FUovEgQHdrIhphxgInHkdMbzLB29/lEoE06j8K8qhJ1Z0lfRHHu9FKegb9/td/MIabzi22EMem89lW2p6180WRqY1buu973FTme6TCdLlLAsAZJx5nvsdRirv17i3azkbSQmqStyKPujPc9hXwekHlkvr5mtLS01IEHm6Rd77cX8+8dwaAQ6F+u4oFn84Eq4kost8PTtvxmx5pR+2OUthkuIQ4YM5sC/TT7hJ/dCA62UBZ31eIykB2Ulyc4/oksKmVZcny18Gf1UJZV30R4eWb/6mkXuH/exekjkiERXteJXde0SH9szYvrEyBeTycViGJNWYJzXRQQepxQDMw==
 
 
-notifications:
-  email: false
-
 archive: true
-
-
-
-after_success:
-# - git push git@heroku.com:ultimate-seed.git master
-
-after_failure:
-# -
-
-after_script:
-# - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd
-# - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
-
 
 #cache: true
 notifications:

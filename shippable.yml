@@ -9,10 +9,8 @@ after_success:
    - mvn clean cobertura:cobertura
    - mvn test
  
-#before_install:
-  #- source /home/shippable/.rvm/scripts/rvm
- # - source ~/.rvm/scripts/rvm && rvm use 1.9.3
-  #- rvm use 2.0.0
+before_install:
+  - shippable_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
   
 before_script: 
    - mvn --version

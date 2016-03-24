@@ -1,9 +1,9 @@
 language: java
 
 jdk:
-   #- openjdk7
+   - openjdk7
    - oraclejdk7
-   #- openjdk6    
+   - openjdk6    
 
 #after_success:
  #  - mvn clean cobertura:cobertura
@@ -20,7 +20,7 @@ build:
    ci:
       - mvn clean cobertura:cobertura
       - mvn test 
-      - shippable_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
+     # - shippable_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
       - mvn --version
       - echo $key1 and $key2
 integrations:

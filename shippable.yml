@@ -23,7 +23,7 @@ build:
      # - shippable_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
       - mvn --version
       - echo $key1 and $key2
-integrations:
+integrations: 
   notifications:
     - integrationName: ship_slack
       type: slack
